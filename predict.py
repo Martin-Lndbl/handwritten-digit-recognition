@@ -1,10 +1,15 @@
+import sys
 import os
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
 
-model = tf.keras.models.load_model('NN_model.keras')
+if sys.argv.__len__() != 2:
+    print("Provide a model")
+    exit()
+
+model = tf.keras.models.load_model(sys.argv[1])
 
 i = 0
 

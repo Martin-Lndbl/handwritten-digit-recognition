@@ -24,4 +24,4 @@ model.compile(
 
 model.fit(x_train, y_train, epochs=3)
 
-model.save('NN_model.keras')
+model.save('model_01.keras')
