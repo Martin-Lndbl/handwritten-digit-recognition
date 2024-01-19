@@ -10,10 +10,6 @@ from keras.utils import normalize, to_categorical
 x_train = normalize(x_train, axis=1)
 x_test = normalize(x_test, axis=1)
 
-# Reshape input data
-x_train = x_train.reshape(x_train.shape[0], 28, 28, 1)
-x_test = x_test.reshape(x_test.shape[0], 28, 28, 1)
-
 y_train = to_categorical(y_train, num_classes=10)
 y_test = to_categorical(y_test, num_classes=10)
 
@@ -36,8 +32,6 @@ model.fit(
     x_train,
     y_train,
     validation_data=(x_test, y_test),
-    epochs=10,
-    batch_size=200)
+    epochs=3)
 
 model.save('model_03.keras')
-
