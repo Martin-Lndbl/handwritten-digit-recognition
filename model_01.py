@@ -22,4 +22,4 @@ model.compile(
 
 model.fit(x_train, y_train, epochs=3)
 
-model.save('model_04.keras')
+model.save('model_01.keras')

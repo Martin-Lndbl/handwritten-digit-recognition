@@ -21,7 +21,6 @@
               python311Packages.matplotlib
               python311Packages.tensorflow
               python311Packages.keras
-              python311Packages.sklearn-deap
             ];
           };
       });
