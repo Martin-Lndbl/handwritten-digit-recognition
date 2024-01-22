@@ -1,4 +1,4 @@
-# handwritten-digit-recognition
+# Handwritten Digit Recognition
 Just another repository using CNN to classify handwritten digits
 
 ## Overview
